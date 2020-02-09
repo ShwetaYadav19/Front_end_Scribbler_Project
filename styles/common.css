@@ -12,8 +12,8 @@ body{
   
 }
 
-header{
-    height: 50px;
+.header-class{
+    height: 60px;
     width: auto;
     background-color: lightgrey;
     
@@ -36,15 +36,13 @@ header{
 
 .home-buttons{
     margin-left: 1000px;
-    margin-top: 5px;
+    margin-top: 6px;
     
     
 }
 
- button{
+ .button-class{
     height: 35px;
-    padding: 7px;
-    margin : 1px,5px;
     text-align: center;
     font-size: 15px;
     background-color: blue; 
