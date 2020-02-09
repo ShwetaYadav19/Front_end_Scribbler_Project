@@ -21,8 +21,8 @@
             </div>
            <div class="home-buttons">
             <button type="button" class="button-class" data-toggle="modal" 
-            data-target="#form">Sign Up</button>
-            <div class="modal" tabindex="-1" role="dialog" id="form">
+            data-target="#signup-form">Sign Up</button>
+            <div class="modal" tabindex="-1" role="dialog" id="signup-form">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -58,7 +58,39 @@
                   </div>
                 </div>
               </div>
-            <button type="button" class="button-class" name="sign-in"  >Sign In</button>
+              <button type="button" class="button-class" data-toggle="modal" 
+              data-target="#signin-form">Sign In</button>
+              <div class="modal" tabindex="-1" role="dialog" id="signin-form">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" style="color:grey;font-family: 'Roboto', sans-serif;font-size: larger;">Welcome Back!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <form>
+                        <div class="modal-body">
+                          <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="password" class="form-control" id="username" placeholder="Enter your username" required>
+                          </div>
+                          <div class="form-group">
+                              <label for="password1">Password</label>
+                              <input type="password" class="form-control" id="password1" placeholder="Enter your password" required>
+                            </div>
+                        </div>
+                        <div class="modal-footer border-top-0 d-flex justify-content-center">
+                          <button type="submit" class="btn btn-success" style="width: 500px;">Sign In</button>
+                        </div>
+                        <div class="modal-footer border-top-0 d-flex justify-content-center">
+                            Not a member ?  <a data-target="#signup-form"  data-dismiss="modal"  data-toggle="modal"  
+                            href="#signup-form"> Sign Up</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
             <div>
          </div>       
     </header>
