@@ -35,20 +35,24 @@
                       <div class="modal-body">
                         <div class="form-group">
                           <label for="name">Name</label>
-                          <input type="text" class="form-control" id="name"  placeholder="Enter your name" required>
+                          <input type="text" class="form-control" id="name"  
+                          placeholder="Enter your name" style="background-color : 	#DCDCDC ;" required>
                          
                         </div>
                         <div class="form-group">
                           <label for="username">Username</label>
-                          <input type="password" class="form-control" id="username" placeholder="Enter your username" required>
+                          <input type="password" class="form-control" id="username" 
+                          placeholder="Enter your username" style="background-color : 	#DCDCDC ;" required>
                         </div>
                         <div class="form-group">
                             <label for="password1">Password</label>
-                            <input type="password" class="form-control" id="password1" placeholder="Enter your password" required>
+                            <input type="password" class="form-control" id="password1" 
+                            placeholder="Enter your password"  style="background-color : 	#DCDCDC ;"required>
                           </div>
                         <div class="form-group">
                           <label for="password1">Confirm Password</label>
-                          <input type="password" class="form-control" id="password2" placeholder="Re-enter your password" required>
+                          <input type="password" class="form-control" id="password2" 
+                          placeholder="Re-enter your password"  style="background-color : 	#DCDCDC ;"required>
                         </div>
                       </div>
                       <div class="modal-footer border-top-0 d-flex justify-content-center">
@@ -73,11 +77,13 @@
                         <div class="modal-body">
                           <div class="form-group">
                             <label for="username">Username</label>
-                            <input type="password" class="form-control" id="username" placeholder="Enter your username" required>
+                            <input type="password" class="form-control" id="username" 
+                            placeholder="Enter your username" style="background-color : 	#DCDCDC ;" required>
                           </div>
                           <div class="form-group">
                               <label for="password1">Password</label>
-                              <input type="password" class="form-control" id="password1" placeholder="Enter your password" required>
+                              <input type="password" class="form-control" id="password1" 
+                              placeholder="Enter your password"  style="background-color : 	#DCDCDC ;" required>
                             </div>
                         </div>
                         <div class="modal-footer border-top-0 d-flex justify-content-center">
@@ -96,8 +102,41 @@
     </header>
     <div>
         <div class="post-buttons">
-            <button type="button" name="All-posts" class="centre-button">All Posts</button>
-             <button type="button" name="Create-post" class="centre-button" >Create Post</button>
+            <button type="button" name="All-posts" class="centre-button" onclick="window.location.href = './html/postslist.html';">All Posts</button>
+         
+             <button type="button" name="Create-post" class="centre-button"  data-toggle="modal" 
+            data-target="#Create-post">Create Post</button>
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="Create-post" >
+                <div class="modal-dialog  modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" style="color:grey;font-family: 'Roboto', sans-serif;font-size: larger;">Pen Your Post</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <form>
+                      <div class="modal-body">
+                        <div class="form-group">
+                          <label for="title" >Title</label>
+                          <input type="text" class="form-control" id="title"  placeholder="Enter title of your post" 
+                           style="background-color : 	#DCDCDC ;"  required>
+                         
+                        </div>
+                        <div class="form-group">
+                          <label for="content" >Contents</label>
+                          <textarea rows="10" cols="50"class="form-control" id="content" 
+                          placeholder="Enter the contents of your post" 
+                           style="background-color :	#DCDCDC;" required ></textarea>
+                        </div>
+                      </div>
+                      <div class="modal-footer border-top-0 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-success" style="width: 100px;">Create</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
             <div>
      </div>   
    
