@@ -1,9 +1,10 @@
-body{
+.common-body{
     background-image: url(../images/background.jpg);
     width: auto;
      /* Full height */
   height: 100%;
-
+  margin-top: 2px;
+  margin-left: 5px;
   /* Center and scale the image nicely */
   background-position: initial;
   background-repeat: no-repeat;
@@ -15,7 +16,6 @@ body{
 .header-class{
     height: 60px;
     width: auto;
-    background-color: lightgrey;
     
 }
 
