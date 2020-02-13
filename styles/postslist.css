@@ -4,24 +4,32 @@ body{
 
 .container{
     padding-top: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card-new{
     border-radius: 25px;
-    height: 120px;
+    height: 140px;
     display: flex;
     flex-direction: row;
     border-radius: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 500px;
+    margin: 10px;
+    width: 500px;
+    transition: box-shadow .3s;
   
 }
+
+.card-new:hover {
+    box-shadow: 0 0  5px 5px rgba(33,33,33,.2); 
+  }
 
 
 
 .side-square-wrapper{
-    height: 120px;
-    width: 15%;
+    height: 140px;
+    width: 17%;
     text-align: center;
     background-color: white;
     padding: 40px 4px;
@@ -33,26 +41,29 @@ body{
 }
 
 .custom-card-body{
-    height: 120px;
+    height: 140px;
     background-color: #DCDCDC;
-    width: 85%;
+    width: 83%;
     padding: 8px;
-    text-align: unset;
     font-size: 12px;
     border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-   
+    border-bottom-right-radius: 20px;   
 }
 
 .card-body-heading{
    color:gray;
    font-size: 13px;
    font-weight: 500;
-   padding-bottom: 30px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding-bottom: 10px;
+   
 }
 
 .trash-button{
-    margin-left: 120px;
+    float: right;
+    padding-right: 10px;
     size: 10px;
     cursor: pointer;
 }
@@ -60,7 +71,21 @@ body{
 .ellipsis{
     margin-left: 370px;
     cursor: pointer;
+    float:right;
+    padding-top: 6px;
+  
 }
+
+
+/*.container {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 20px; 
+} */
+
+
+
+
 
 
 

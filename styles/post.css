@@ -1,0 +1,10 @@
+.heading-content{
+   text-align: center;
+   font-size: 25px;
+   font-weight: bolder;
+}
+
+
+#edit-button{
+    float: right;
+}
