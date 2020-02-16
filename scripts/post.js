@@ -43,15 +43,6 @@ function onEdit(){
 }
 
 
-
-
-
-$(document).ready(function() { 
-    $("#editButton").click(function() { 
-        $(document).scrollTop($(document).height()); 
-    }); 
-}); 
-
 window.onload = function () {
     if (queryString.length == 0) {
         if (window.location.search.split('?').length > 1) {
@@ -90,12 +81,15 @@ function countLikes(){
 
 var comments = [];
 function addComment(comment){
+    if(comment.value !== ''){
     document.getElementById('comments').style.visibility = 'visible';
     var comment = comment.value;
     comments.unshift(comment);
     $("#comment").val('');
     console.log(comments);
     this.comments.forEach(addingComment);
+    $(document).scrollTop($(document).height()); 
+    }
 }
 
 function addingComment(item, index){
@@ -103,5 +97,6 @@ function addingComment(item, index){
     document.getElementById("comments").innerHTML = '<div class="comment">'+item+'</div>' + '</br>';
     document.getElementById("comments").innerHTML += temp + '</br>';
     comments.pop();
+    
 }
 
