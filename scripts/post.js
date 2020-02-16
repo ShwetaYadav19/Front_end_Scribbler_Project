@@ -36,7 +36,8 @@ function onEdit(){
     document.getElementById("editHeading").style.border = "none";
 
     document.getElementById("editButton").innerHTML = 'Edit<i class="fa fa-edit" style="padding-left: 4px;"></i>';
-    editMode = false;
+    document.getElementById("editButton").disabled = true;
+    
 }
 
    
