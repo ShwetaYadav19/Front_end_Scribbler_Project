@@ -1,14 +1,56 @@
 
 var queryString = new Array();
+var editMode = false;
+var num=0;
 
 function onEdit(){
+   num = num+1;
+   console.log(num);
+    if(!editMode ){
 
-    document.getElementById('post').focus();
+    document.getElementById("editHeading").style.borderWidth = "1px";
+    document.getElementById("editHeading").style.borderStyle = "solid";
+    document.getElementById("editHeading").style.borderColor = "red";
 
-};
+    document.getElementById("editContent").style.borderWidth = "1px";
+    document.getElementById("editContent").style.borderStyle = "solid";
+    document.getElementById("editContent").style.borderColor = "red";
+
+    
+    document.getElementById("editButton").innerHTML = 'Save<i class="fa fa-save" style="padding-left: 4px;"></i></button>';
+    editMode = true;
+    
+}   else {
+ 
+    if(num === 2){
+    var temp =  document.getElementById("editHeading");
+    document.getElementById("editHeading").innerHTML = "<span>UPDATED:</span>" + temp.innerHTML;
+
+
+    var temp =  document.getElementById("editContent");
+    document.getElementById("editContent").innerHTML = "<div>UPDATED:</div>" + temp.innerHTML;
+     
+    }
+
+    document.getElementById("editContent").style.border = "none";
+    document.getElementById("editHeading").style.border = "none";
+
+    document.getElementById("editButton").innerHTML = 'Edit<i class="fa fa-edit" style="padding-left: 4px;"></i>';
+    editMode = false;
+}
+
+   
+}
 
 
 
+
+
+$(document).ready(function() { 
+    $("#editButton").click(function() { 
+        $(document).scrollTop($(document).height()); 
+    }); 
+}); 
 
 window.onload = function () {
     if (queryString.length == 0) {
@@ -28,6 +70,7 @@ window.onload = function () {
         document.getElementsByClassName("author-name")[0].innerHTML = author;
     }
     document.getElementById('comments').style.visibility = 'hidden';
+
 
 };
 

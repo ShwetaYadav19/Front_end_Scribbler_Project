@@ -11,15 +11,28 @@ body{
 }
 
 
+.author{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+ 
+}
+
 .author-name{
     font-family: 'Courier New', Courier, monospace;
    font-weight: bold;
    font-size: 20px;
+   width: 50%;
+   
 }
 
 #editButton{
-    float: right;
+    width: 50%;
+    margin-left: 500px;
+    width: 70px;
 }
+
+
 
 .post-content{
     word-wrap: break-word;
