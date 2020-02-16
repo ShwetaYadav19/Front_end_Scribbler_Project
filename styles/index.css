@@ -14,42 +14,6 @@ html, body{
   min-height: 100%;
 }
 
-.header-class{
-    height: 60px;
-    width: auto;
-    
-}
-
-.header-bar{
-    display: flex;
-    flex-direction: row;
-    align-items: initial;
-    
-
-}
-
-
-.side-logo{ 
-    margin-left: 5px;
-    padding: 1px;
-    margin: 2px;
-}
-
-.home-buttons{
-    margin-left: 1000px;
-    margin-top: 6px;
-    
-    
-}
-
- .button-class{
-    height: 35px;
-    text-align: center;
-    font-size: 15px;
-    background-color: blue; 
-     color:white;
-    
-} 
 
 
 .post-buttons{
