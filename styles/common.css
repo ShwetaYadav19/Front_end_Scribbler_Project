@@ -3,13 +3,11 @@
     width: auto;
      /* Full height */
   height: 100%;
-  margin-top: 2px;
-  margin-left: 5px;
   /* Center and scale the image nicely */
-  background-position: initial;
+  
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top;
+  background-position: center ;
   
 }
 
