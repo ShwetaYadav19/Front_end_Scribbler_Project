@@ -57,8 +57,10 @@ window.onload = function () {
     if (queryString["heading"] != null && queryString["author"] != null) {
         var heading = queryString["heading"] ;
         var author  =  queryString["author"];
+        var content = queryString["content"];
         document.getElementsByClassName("heading-content")[0].innerHTML = heading;
         document.getElementsByClassName("author-name")[0].innerHTML = author;
+        document.getElementsByClassName("post-content")[0].innerHTML = content;
     }
     document.getElementById('comments').style.visibility = 'hidden';
 

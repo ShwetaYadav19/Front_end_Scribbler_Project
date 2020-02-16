@@ -11,7 +11,7 @@ body{
 
 .card-new{
     border-radius: 25px;
-    height: 140px;
+    height: 150px;
     display: flex;
     flex-direction: row;
     border-radius: 30px;
@@ -28,7 +28,7 @@ body{
 
 
 .side-square-wrapper{
-    height: 140px;
+    height: 150px;
     width: 17%;
     text-align: center;
     background-color: white;
@@ -41,23 +41,23 @@ body{
 }
 
 .custom-card-body{
-    height: 140px; 
+    height: 150px; 
     background-color: #DCDCDC;
     width: 83%;
     padding: 5px;
-    font-size: 12px;
+    font-size: 14px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px; 
 }
 
 .card-body-heading{
    color:gray;
-   font-size: 13px;
+   font-size: 16px;
    font-weight: 500;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   padding-bottom: 10px;
+   padding-bottom: 5px;
    
 }
 
@@ -81,7 +81,7 @@ body{
    color: grey;
     cursor: pointer;
     padding-right: 120px;
-    margin-bottom: 1px; 
+    margin-bottom: 4px; 
  
   
 }
